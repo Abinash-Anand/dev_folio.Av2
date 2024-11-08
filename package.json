@@ -23,10 +23,14 @@
     "@angular/platform-server": "^18.2.0",
     "@angular/router": "^18.2.0",
     "@angular/ssr": "^18.2.11",
+<<<<<<< HEAD
     "bootstrap": "^5.3.3",
     "express": "^4.18.2",
     "jquery": "^3.7.1",
     "popper.js": "^1.16.1",
+=======
+    "express": "^4.18.2",
+>>>>>>> 220e87db564bb7f5bfee2082792d4ee16a33e01f
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
@@ -46,4 +50,8 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.5.2"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 220e87db564bb7f5bfee2082792d4ee16a33e01f
