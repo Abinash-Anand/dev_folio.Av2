@@ -1,0 +1,46 @@
+.about{
+    background-color: #F4F6FF;
+  
+}
+.about-sub-section{
+    /* display: flex;
+    flex-direction: column; */
+    /* padding: 4vw; */
+    /* justify-content: end; */
+}
+/* Border radius */
+
+.about{
+    border-radius: 50px;
+}
+.about-content,
+.resume {
+    border-radius: 25px;
+    padding:  5vw 0;
+
+}
+.me {
+    justify-self: start;
+}
+.about-content{
+    background-color: #1E201E;
+
+}
+.resume{
+    display: flex;
+    flex-direction: row;
+    text-align:right;
+    align-items: self-end;
+    justify-content:stretch;
+
+    background-image: linear-gradient(to right bottom, #d54bef, #bd56db, #a85dc5, #9461af, #826297);
+}
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+}
+.about-me{
+    line-height: 1.5;
+}
