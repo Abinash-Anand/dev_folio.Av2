@@ -1,0 +1,29 @@
+<div class="container my-5">
+    <div class="row ">
+        <div class="col-12 project-container  mb-4"   *ngFor="let project of projects " >
+            <div class="card project-card  shadow-sm h-100 position-relative " style="border-radius:25px" >
+                <!-- Project Image with Overlay -->
+                <img [src]="project.image" class="card-img-top  project-image" style="border-radius:25px" alt="{{ project.title }} Screenshot">
+
+                <!-- Overlay Content -->
+                <div
+                    class="overlay project  position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center">
+                    <!-- <h5 class="card-title text-white">{{ project.title }}</h5> -->
+                    <p class="card-text text-white mb-3"></p>
+
+                    <!-- Technologies as Badges -->
+                    <div class="technologies mb-3">
+                        <!-- <span *ngFor="let tech of project.technologies" class="badge bg-light text-dark me-1">{{ tech
+                            }}</span> -->
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="d-flex  justify-content-center gap-3">
+                        <a [href]="project.liveLink" target="_blank" class="btn btn-outline-success btn-lg">Live Demo</a>
+                        <a [href]="project.githubLink" target="_blank" class="btn btn-outline-success btn-lg">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

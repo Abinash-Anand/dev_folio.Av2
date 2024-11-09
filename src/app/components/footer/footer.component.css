@@ -1,0 +1,19 @@
+.footer {
+    background-color: #121212;
+    /* Dark background */
+    padding: 60px 0;
+}
+
+.footer a {
+    font-size: 1.2em;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer a:hover {
+    color: #00aaff;
+    /* Hover color */
+}
+
+.footer small {
+    color: #777;
+}

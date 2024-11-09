@@ -1,0 +1,69 @@
+/* Introductory Card Styling */
+.intro-card {
+    background-color: #f2f3f5;
+    color: #5a5a5a;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.intro-card h3 {
+    color: #333;
+    font-weight: 600;
+}
+
+.intro-card h4 {
+    color: #6c757d;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Contact Form Styling */
+.contact-card {
+    background-color: #1e1e1e;
+    /* Dark background for contrast */
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+.form-input {
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+}
+
+.form-input::placeholder {
+    color: #bbb;
+    opacity: 1;
+}
+
+/* Button Styling */
+.form-submit-btn {
+    background-color: #333;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.form-submit-btn .arrow {
+    font-size: 1.2rem;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.form-submit-btn:hover {
+    background-color: #444;
+}
+
+.form-submit-btn:hover .arrow {
+    transform: translateX(5px);
+    /* Animate arrow on hover */
+}

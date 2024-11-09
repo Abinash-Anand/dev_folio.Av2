@@ -1,0 +1,22 @@
+<nav class="navbar p-5" [ngClass]="{'fixed-navbar': isNavbarOpen && isScrolled}">
+    <a class="navbar-brand" routerLink="/home">
+        <img src="assets/logo.png" style="width: 100px;" alt="logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav" [ngClass]="{'show': isNavbarOpen}">
+        <div class="row">
+            <div class="col-sm navbar-axis-y">
+                <h3><a class="nav-link" routerLink="/home">Home</a></h3>
+                <h3><a class="nav-link" routerLink="/about">About</a></h3>
+                <h3><a class="nav-link" routerLink="/projects">Projects</a></h3>
+                <h3><a class="nav-link" routerLink="/skills">Stack</a></h3>
+                <h3><a class="nav-link" routerLink="/contact">Contact</a></h3>
+            </div>
+        </div>
+    </div>
+</nav>

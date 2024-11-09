@@ -1,0 +1,140 @@
+/* Navbar Styles */
+.navbar {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: navbarFadeIn 1s forwards 0.3s;
+    /* Delayed fade-in for navbar */
+}
+
+/* Animation for the entire navbar on load */
+@keyframes navbarFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Logo Animation */
+.navbar-brand img {
+    width: 100px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: logoFadeIn 1.2s forwards 0.5s;
+    /* Fade and grow effect on load */
+}
+
+/* Logo animation keyframes */
+@keyframes logoFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Animation for Navbar Links */
+.navbar-axis-y {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Apply animation on open */
+.navbar-collapse.show .navbar-axis-y {
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideIn 1s ease-out;
+}
+
+/* Slide-in animation for links */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styling each link */
+.nav-link {
+    font-size: 2vw;
+    letter-spacing: 5px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Blurring effect for non-hovered links */
+.navbar-axis-y:hover h3 a {
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+/* Make hovered link stand out */
+.navbar-axis-y h3:hover a {
+    opacity: 1 !important;
+}
+
+/* Hover effect on each link with scale */
+h3 a:hover {
+    color: #000;
+    transform: scale(1.15);
+}
+
+/* Navbar Hover Background Change */
+.navbar:hover {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover Effect on Logo */
+.navbar-brand:hover img {
+    transform: scale(1.05) rotate(3deg);
+    /* Slightly enlarge and rotate */
+    transition: transform 0.4s ease;
+}
+
+/* Hover effect on the toggler icon (hamburger) */
+.navbar-toggler {
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    transform: rotate(180deg);
+    /* Rotate on hover */
+}
+
+/* Initial visibility for the navbar elements */
+.navbar,
+.navbar-brand img,
+.navbar-axis-y {
+    animation-delay: 0.2s;
+}
+/* Fixed Navbar Styles */
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}

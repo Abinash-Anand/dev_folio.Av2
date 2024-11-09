@@ -1,0 +1,102 @@
+.stack{
+background-color: #1E201E;
+    padding: 2vw 1vw;
+}
+.skills{
+ background-color: #F5EFFF;
+ 
+}
+.stack, .skills{
+    border-radius: 25px;
+}
+.zoomout-skills {
+    transition: transform 0.7s ease-in-out;
+    transform-origin: center;
+    /* Ensures that scaling happens smoothly from the center */
+}
+
+/* Base styles for animation */
+.zoomout-skills {
+    opacity: 0;
+    transform: translateX(-500px);
+    transition: transform 0.7s ease-in, opacity 0.7s ease-in-out;
+}
+
+/* Alternate animation direction for each element */
+.zoomout-skills:nth-child(odd) {
+    animation: slideInLeft 1s ease forwards;
+}
+
+.zoomout-skills:nth-child(even) {
+    animation: slideInRight 1s ease forwards;
+}
+
+/* Keyframes for slide-in animations */
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px) scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(200px) scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+/* Hover effect to shrink div and text together */
+.zoomout-skills:hover {
+    transform: scale(0.95);
+    padding: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    transition: 0.5s ease-in-out;
+}
+/* Cascading delay for smoother, sequential animations */
+.zoomout-skills:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.zoomout-skills:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.zoomout-skills:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.zoomout-skills:nth-child(4) {
+    animation-delay: 0.7s;
+}
+
+.zoomout-skills:nth-child(5) {
+    animation-delay: 0.9s;
+}
+
+.zoomout-skills:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.zoomout-skills:nth-child(7) {
+    animation-delay:1.2s;
+}
+
+.zoomout-skills:nth-child(8) {
+    animation-delay:1.4s;
+}
+
+.zoomout-skills:nth-child(9) {
+    animation-delay: 1.6s;
+}

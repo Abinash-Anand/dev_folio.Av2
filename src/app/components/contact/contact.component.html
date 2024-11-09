@@ -1,0 +1,42 @@
+<div class="container my-5">
+  <h1 style="text-align: center;">Reach out to Me</h1>
+  <hr>
+  <div class="row justify-content-center">
+    <!-- Introductory Card -->
+    <div class="col-md-6 mb-4">
+      <div class="p-4 shadow-sm intro-card rounded text-left p-5">
+        <h3 class="mb-2">Let's Get in Touch!</h3>
+        <h1 class="fw-bold mt-3">Do you want to work with me?</h1>
+      </div>
+    </div>
+
+    <!-- Contact Input Fields -->
+    <div class="col-md-6">
+      <div class="card contact-card p-4 shadow-sm border-0">
+        <div class="row">
+          <div class="col-6 mb-3">
+            <input type="text" #nameInput class="form-control form-input" placeholder="Name *" />
+            <div *ngIf="errors['name']" class="text-danger">{{ errors['name'] }}</div>
+          </div>
+          <div class="col-6 mb-3">
+            <input type="email" #emailInput class="form-control form-input" placeholder="Email *" />
+            <div *ngIf="errors['email']" class="text-danger">{{ errors['email'] }}</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="text" #subjectInput class="form-control form-input" placeholder="Subject *" />
+          <div *ngIf="errors['subject']" class="text-danger">{{ errors['subject'] }}</div>
+        </div>
+        <div class="mb-3">
+          <textarea #messageInput class="form-control form-input" rows="4" placeholder="Message *"></textarea>
+          <div *ngIf="errors['message']" class="text-danger">{{ errors['message'] }}</div>
+        </div>
+        <div class="d-grid">
+          <button (click)="onSendMessage()" class="btn btn-primary btn-lg form-submit-btn">
+            Send Message <span class="arrow">&rarr;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

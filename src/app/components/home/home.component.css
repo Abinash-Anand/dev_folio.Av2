@@ -1,0 +1,12 @@
+h1 {
+    font-size: 5.8vw;
+    letter-spacing: 10px;
+    line-height: 100%;
+
+}
+
+.container-1{
+    letter-spacing: 3px;
+    line-height: 2rem;
+    height: 70vh;
+}
