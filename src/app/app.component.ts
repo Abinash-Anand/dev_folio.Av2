@@ -1,14 +1,8 @@
-<<<<<<< HEAD
 import { AfterViewInit, Component, ElementRef, HostListener, ViewChild } from '@angular/core';
-=======
-import { Component, OnInit } from '@angular/core';
-import { HeaderComponent } from "./components/header/header.component";
->>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-<<<<<<< HEAD
   styleUrl: './app.component.css'
 })
 export class AppComponent implements AfterViewInit{
@@ -42,13 +36,5 @@ export class AppComponent implements AfterViewInit{
       }
     });
   }
-=======
-  styleUrl: './app.component.css',
-  imports: [HeaderComponent]
-})
-export class AppComponent  {
-  title = 'dev_folio.Av2';
-  scrollIsTrue: boolean = true;
->>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef
 
 }

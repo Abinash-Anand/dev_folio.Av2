@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { Component, HostListener } from '@angular/core';
-=======
-import { Component } from '@angular/core';
->>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef
 
 @Component({
   selector: 'app-header',
@@ -10,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-<<<<<<< HEAD
    isNavbarOpen = false;
   isScrolled = false;
 
@@ -36,7 +31,5 @@ export class HeaderComponent {
       navbarElement.classList.remove('fixed-navbar');
     }
   }
-=======
->>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef
 
 }

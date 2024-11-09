@@ -1,13 +1,8 @@
-<<<<<<< HEAD
 import { Component, ElementRef, ViewChild } from '@angular/core';
-=======
-import { Component } from '@angular/core';
->>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-<<<<<<< HEAD
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
@@ -71,10 +66,4 @@ export class ContactComponent {
       console.error('Failed to open Gmail. This may be due to browser popup settings.');
     }
   }
-=======
-  styleUrl: './contact.component.css'
-})
-export class ContactComponent {
-
->>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef
 }

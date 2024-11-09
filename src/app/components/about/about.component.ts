@@ -1,13 +1,8 @@
-<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
-=======
-import { Component } from '@angular/core';
->>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-<<<<<<< HEAD
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
@@ -67,10 +62,3 @@ readMore(){
 }
 
 
-=======
-  styleUrl: './about.component.css'
-})
-export class AboutComponent {
-
-}
->>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef
