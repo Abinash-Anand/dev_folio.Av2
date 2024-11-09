@@ -37,14 +37,23 @@
               }
             ],
             "styles": [
+<<<<<<< HEAD
               "@angular/material/prebuilt-themes/magenta-violet.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+=======
+            "node_modules/bootstrap/dist/css/bootstrap.min.css",
+>>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef
               "src/styles.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
+<<<<<<< HEAD
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+=======
+             "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+>>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef
             ],
             "server": "src/main.server.ts",
             "prerender": true,

@@ -15,8 +15,13 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { LoaderComponent } from './components/loader/loader.component';
+<<<<<<< HEAD
 
 import { CommonModule } from '@angular/common';
+=======
+import { CommonModule } from '@angular/common';
+
+>>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,18 +35,28 @@ import { CommonModule } from '@angular/common';
     GalleryComponent,
     TestimonialsComponent,
     SkillsComponent,
+<<<<<<< HEAD
     LoaderComponent,
 
+=======
+    LoaderComponent
+>>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+<<<<<<< HEAD
     CommonModule,
         
 
   
     
     
+=======
+    AppRoutingModule,
+    CommonModule
+
+>>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef
   ],
   providers: [
     provideClientHydration(),

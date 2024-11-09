@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1 {
     font-size: 5.8vw;
     letter-spacing: 10px;
@@ -10,3 +11,16 @@ h1 {
     line-height: 2rem;
     height: 70vh;
 }
+=======
+
+h1{
+    font-size: 6.5vw;
+    letter-spacing: 13px;
+    
+}
+/* .container-1{
+    border: 1px solid red;
+
+} */
+
+>>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef

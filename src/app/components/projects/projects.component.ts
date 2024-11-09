@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { Component, HostListener } from '@angular/core';
+=======
+import { Component } from '@angular/core';
+>>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef
 
 @Component({
   selector: 'app-projects',
@@ -6,6 +10,7 @@ import { Component, HostListener } from '@angular/core';
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
+<<<<<<< HEAD
   projects: any[] = [
     {
     "title": "CloudCompass",
@@ -132,4 +137,7 @@ export class ProjectsComponent {
       }
     });
   }
+=======
+
+>>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef
 }

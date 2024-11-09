@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Navbar Styles */
 .navbar {
     background: rgba(255, 255, 255, 0.9);
@@ -137,4 +138,8 @@ h3 a:hover {
     top: 0;
     width: 100%;
     z-index: 999;
+=======
+.navbar{
+    background-color: rgba(241, 218, 254, 0.842);
+>>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef
 }

@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+<<<<<<< HEAD
 shortBio: string = 'Hi! I’m Abinash Anand, a versatile Software Engineer who turns complex ideas into high-impact, user-focused solutions. With expertise across front-end, back-end, and everything in between, I build seamless, scalable applications that drive results. Let’s create something extraordinary together!'
 constructor(){}
   showResume() {
@@ -14,4 +15,7 @@ constructor(){}
     link.download = 'abinash_anand-resume(1).pdf';
     link.dispatchEvent(new MouseEvent('click'))
 }
+=======
+
+>>>>>>> 83ed222e4ddca81e671812a87922ba13f1b587ef
 }
