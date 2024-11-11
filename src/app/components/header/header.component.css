@@ -138,3 +138,9 @@ h3 a:hover {
     width: 100%;
     z-index: 999;
 }
+
+@media screen and (max-width: 576px) {
+    h3 > a{
+        font-size: 1rem;
+    }
+}
