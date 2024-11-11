@@ -10,3 +10,9 @@ h1 {
     line-height: 2rem;
     height: 70vh;
 }
+
+@media screen and (max-width: 991px) {
+    .container-1{
+        height: auto;
+    }
+}
