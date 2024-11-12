@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { ProjectService } from '../../services/project.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,8 @@ import { Component, HostListener } from '@angular/core';
 export class HeaderComponent {
    isNavbarOpen = false;
   isScrolled = false;
-
+ 
+  constructor(private projectService: ProjectService){}
   // Toggle the navbar open state when hamburger is clicked
   toggleNavbar() {
     this.isNavbarOpen = !this.isNavbarOpen;
@@ -31,5 +33,8 @@ export class HeaderComponent {
       navbarElement.classList.remove('fixed-navbar');
     }
   }
-
+  onProjectsSection() {
+    
+    this.projectService.openProjectSection = true
+}
 }

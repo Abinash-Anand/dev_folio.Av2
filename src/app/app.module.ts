@@ -17,6 +17,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { LoaderComponent } from './components/loader/loader.component';
 
 import { CommonModule } from '@angular/common';
+import { ProjectService } from './services/project.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,16 +32,17 @@ import { CommonModule } from '@angular/common';
     TestimonialsComponent,
     SkillsComponent,
     LoaderComponent,
-
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     CommonModule,
+    AppRoutingModule
   ],
   providers: [
     provideClientHydration(),
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    ProjectService
   ],
   bootstrap: [AppComponent]
 })

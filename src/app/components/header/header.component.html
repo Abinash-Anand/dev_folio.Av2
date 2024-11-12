@@ -1,5 +1,5 @@
 <nav class="navbar p-5" [ngClass]="{'fixed-navbar': isNavbarOpen && isScrolled}">
-    <a class="navbar-brand" routerLink="/home">
+    <a class="navbar-brand" href="#home-section">
         <img src="assets/logo.png" style="width: 100px;" alt="logo">
     </a>
 
@@ -10,13 +10,13 @@
 
     <div class="collapse navbar-collapse" id="navbarNav" [ngClass]="{'show': isNavbarOpen}">
         <div class="row">
-            <div class="col-sm navbar-axis-y ">
-                <h3><a class="nav-link" routerLink="/home">Home</a></h3>
-                <h3><a class="nav-link" routerLink="/about">About</a></h3>
-                <h3><a class="nav-link" routerLink="/projects">Projects</a></h3>
-                <h3><a class="nav-link" routerLink="/skills">Stack</a></h3>
-                <h3><a class="nav-link" routerLink="/contact">Contact</a></h3>
+            <div class="col-sm navbar-axis-y">
+                <h3><a class="nav-link" href="#home-section">Home</a></h3>
+                <h3><a class="nav-link" href="#about-section" >About</a></h3>
+                <h3><a class="nav-link" href="#projects-section">Projects</a></h3>
+                <h3><a class="nav-link" href="#skills-section">Stack</a></h3>
+                <h3><a class="nav-link" href="#contact-section">Contact</a></h3>
             </div>
         </div>
     </div>
-</nav>  
+</nav>
