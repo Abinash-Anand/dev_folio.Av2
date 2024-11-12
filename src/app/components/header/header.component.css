@@ -8,7 +8,38 @@
     animation: navbarFadeIn 1s forwards 0.3s;
     /* Delayed fade-in for navbar */
 }
+/* Default behavior for large screens: vertical axis (Y-axis) */
 
+/* For extra small screens (XS) and smaller: horizontal axis (X-axis) */
+@media (max-width: 576px) {
+    .navbar-axis-y {
+        display: flex;
+        flex-direction: column;
+        /* Stack vertically */
+        justify-content: center;
+        /* Center the links vertically */
+        align-items: center;
+        /* Center the links horizontally */
+        width: 100%;
+        gap: 0.5rem;
+    flex-wrap: wrap;
+        /* Add space between the links */
+    }
+
+    .navbar-axis-y h3 {
+        width: 100%;
+        /* Make each link take full width */
+        text-align: center;
+        /* Center the text */
+    }
+
+    .navbar-axis-y h3 a {
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        /* Add some padding for better touch experience */
+    }
+}
 /* Animation for the entire navbar on load */
 @keyframes navbarFadeIn {
     0% {

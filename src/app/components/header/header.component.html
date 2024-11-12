@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg p-5" [ngClass]="{'fixed-navbar': isNavbarOpen && isScrolled}">
+<nav class="navbar p-5" [ngClass]="{'fixed-navbar': isNavbarOpen && isScrolled}">
     <a class="navbar-brand" routerLink="/home">
         <img src="assets/logo.png" style="width: 100px;" alt="logo">
     </a>
@@ -9,22 +9,14 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav" [ngClass]="{'show': isNavbarOpen}">
-        <ul class="navbar-nav ms-auto text-center">
-            <li class="nav-item">
+        <div class="row">
+            <div class="col-sm navbar-axis-y ">
                 <h3><a class="nav-link" routerLink="/home">Home</a></h3>
-            </li>
-            <li class="nav-item">
                 <h3><a class="nav-link" routerLink="/about">About</a></h3>
-            </li>
-            <li class="nav-item">
                 <h3><a class="nav-link" routerLink="/projects">Projects</a></h3>
-            </li>
-            <li class="nav-item">
                 <h3><a class="nav-link" routerLink="/skills">Stack</a></h3>
-            </li>
-            <li class="nav-item">
                 <h3><a class="nav-link" routerLink="/contact">Contact</a></h3>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
-</nav>
+</nav>  
