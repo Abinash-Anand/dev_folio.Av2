@@ -112,7 +112,7 @@ export class ProjectsComponent {
 
   },
   "image": "assets/BookNGo.png",
-    "liveLink": "https://eber-1pgav7d7x-abinash-anands-projects.vercel.app/", // Update with the actual link if available
+    "liveLink": "https://eber-app.vercel.app/", // Update with the actual link if available
     "githubLink": "https://github.com/Abinash-Anand/Eber-app/tree/main" // 
 }
 
