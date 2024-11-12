@@ -10,7 +10,7 @@ background-color: #1E201E;
     border-radius: 25px;
 }
 .zoomout-skills {
-    transition: transform 0.7s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     transform-origin: center;
     /* Ensures that scaling happens smoothly from the center */
 }
@@ -19,16 +19,16 @@ background-color: #1E201E;
 .zoomout-skills {
     opacity: 0;
     transform: translateX(-500px);
-    transition: transform 0.7s ease-in, opacity 0.7s ease-in-out;
+    transition: transform 0.5s ease-in, opacity 0.5s ease-in-out;
 }
 
 /* Alternate animation direction for each element */
 .zoomout-skills:nth-child(odd) {
-    animation: slideInLeft 1s ease forwards;
+    animation: slideInLeft 0.6s ease forwards;
 }
 
 .zoomout-skills:nth-child(even) {
-    animation: slideInRight 1s ease forwards;
+    animation: slideInRight 0.6s ease forwards;
 }
 
 /* Keyframes for slide-in animations */
@@ -57,11 +57,11 @@ background-color: #1E201E;
 }
 
 /* Hover effect to shrink div and text together */
-.zoomout-skills:hover {
+.zoomout-skills-child:hover {
     transform: scale(0.95);
-    padding: 0;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 25px;
+    /* padding: 0; */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
+        /* border-radius: 25px; */
     transition: 0.5s ease-in-out;
 }
 /* Cascading delay for smoother, sequential animations */
