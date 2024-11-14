@@ -15,22 +15,22 @@ import { MyProjectsComponent } from './components/projects/my-projects/my-projec
 
 // Define routes
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
-  // { path: 'home', component: HomeComponent },
-  {
-    path: 'about', component: AboutComponent, children: [
-   { path:'profile', component:ProfileComponent}
-  ]},
-  {
-    path: 'projects', component: ProjectsComponent, children: [
-    {path:'my-projects', component:MyProjectsComponent}
-  ]},
-  { path: 'resume', component: ResumeComponent },
-  // { path: 'contact', component: ContactComponent },
-  // { path: 'gallery', component: GalleryComponent },
-  // { path: 'testimonials', component: TestimonialsComponent },
-  { path: 'skills', component: SkillsComponent },
-  { path: '**', redirectTo: '/home' } // Wildcard route for a 404 page
+  // { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
+  // // { path: 'home', component: HomeComponent },
+  // {
+  //   path: 'about', component: AboutComponent, children: [
+  //  { path:'profile', component:ProfileComponent}
+  // ]},
+  // {
+  //   path: 'projects', component: ProjectsComponent, children: [
+  //   {path:'my-projects', component:MyProjectsComponent}
+  // ]},
+  // { path: 'resume', component: ResumeComponent },
+  // // { path: 'contact', component: ContactComponent },
+  // // { path: 'gallery', component: GalleryComponent },
+  // // { path: 'testimonials', component: TestimonialsComponent },
+  // { path: 'skills', component: SkillsComponent },
+  // { path: '**', redirectTo: '/home' } // Wildcard route for a 404 page
 ];
 
 @NgModule({
